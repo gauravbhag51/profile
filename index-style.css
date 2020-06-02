@@ -7,6 +7,9 @@
     overflow: hidden;
     font-size: 1rem;
 }
+html{
+    scroll-behavior: smooth;
+}
 footer{
     padding:50px 50px 100px 30px;
 }
@@ -97,13 +100,11 @@ footer{
 }
 .shows img{
     border-radius: 5px;
-    margin:10px;
+    margin:15px;
+    cursor: pointer;
 }
 .shows img:hover{
     box-shadow: -2px 2px 5px 5px rgb(99, 96, 96);
-}
-.shows .secondrow{
-    padding-top:10px;
 }
 footer{
 background-color: rgb(66, 58, 58);
@@ -119,7 +120,7 @@ background-color: rgb(66, 58, 58);
 .por-name{
     text-align: left;
     font-size: 1rem;
-    padding-top:30px;
+    padding-top:5%;
 }
 .por-box{
     margin-bottom:20px;
@@ -130,5 +131,13 @@ footer a{
 }
 .footer-image{
     border-radius: 50px;
-    vertical-align: 0%;
+}
+.h1-animated{
+    opacity:0;
+    transform: translateY(20px);
+    transition: 0.75s all ease-in-out;
+}
+.h1-appear{
+    opacity: 1;
+    transform: translateY(0);
 }

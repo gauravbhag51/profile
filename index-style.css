@@ -11,6 +11,7 @@ html{
     scroll-behavior: smooth;
 }
 footer{
+    display:block;
     padding:50px 50px 100px 30px;
 }
 .navbar-dark .navbar-nav .nav-link {
@@ -128,19 +129,22 @@ background-color: rgb(66, 58, 58);
 .por-box{
     margin-bottom:20px;
 }
+.foot{
+    margin-bottom: 5%;
+}
 footer a{
-    margin:10px;
-    margin-top: 100px;
+    margin:1%;
+    margin-top: 5%;
 }
 .footer-image{
     border-radius: 50px;
 }
-.h1-animated{
+.disappear{
     opacity:0;
     transform: translateY(20px);
     transition: 0.75s all ease-in-out;
 }
-.h1-appear{
+.appear{
     opacity: 1;
     transform: translateY(0);
 }

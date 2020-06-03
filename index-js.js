@@ -15,6 +15,8 @@ function scroll_events(){
     })
     let images=document.querySelectorAll(".shows img");
     images.forEach(image=>{
+        if(curaudio==image.classList[1])
+        {
         positiontop=image.getBoundingClientRect().top;
         positionbottom=image.getBoundingClientRect().bottom;
         var screenPosition=window.innerHeight;
@@ -26,9 +28,10 @@ function scroll_events(){
                 playingmusic[0]="";
             }
         }
+    }
       });
 }
-
+let curaudio="";
 function playaudio(){
     let images=document.querySelectorAll(".shows img");
     var music={
@@ -48,6 +51,7 @@ function playaudio(){
                    playingmusic[0]="";
                }
             let name=image.classList[1];
+            curaudio=name;
             console.log(`${music[`${name}`]}`);
             playingmusic[0]=new Audio(`${music[`${name}`]}`);
             playingmusic[0].play();

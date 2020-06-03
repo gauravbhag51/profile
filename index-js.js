@@ -1,18 +1,19 @@
 let playingmusic={0:""};
 function scroll_events(){
-    var headings=document.querySelectorAll(".h1-animated");
+    var headings=document.querySelectorAll(".disappear");
     headings.forEach(heading=>{
         text=heading.getBoundingClientRect().top;
+        bottom=heading.getBoundingClientRect().bottom;
         var screenPosition=window.innerHeight/1.3;
         if(text<screenPosition)
         {
-            heading.classList.add("h1-appear");
+            heading.classList.add("appear");
         }
-        if(text>=window.innerHeight)
+        if(text>=screenPosition||bottom<window.innerHeight/3.2)
         {
-            heading.classList.remove("h1-appear");
+            heading.classList.remove("appear");
         }
-    })
+    });
     let images=document.querySelectorAll(".shows img");
     images.forEach(image=>{
         if(curaudio==image.classList[1])

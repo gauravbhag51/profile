@@ -5,7 +5,8 @@
     color: black;
     box-sizing: border-box;
     overflow: hidden;
-    font-size: 1rem;
+    font-size: 1.25rem;
+    font-family: 'Crimson Pro',serif;
 }
 html{
     scroll-behavior: smooth;
@@ -19,9 +20,19 @@ html{
 .intro{
     width: 100%;
     height: 100vh;
+    margin-bottom:50px;
 }
 .intro h1{
-    font-size: 2.5rem;
+    font-size: 2.25rem;
+    text-shadow: 2px 2px black;
+    font-weight: 450;
+}
+.typing::after{
+    content:"";
+    width:4px;
+    height:80%;
+    border-right: 2px solid beige;
+    animation: blink 0.75s infinite;
 }
 .intro_pic{
     width: 100%;
@@ -36,10 +47,14 @@ html{
 .about{
     padding:40px 30px 0 30px;
     text-align: center;
+    margin-bottom:50px;
+    font-size: 1.25rem;
+}
+.about i{
+    padding:20px;
 }
 .content{
     padding:10px 20px;
-    font-size: 1.2rem;
     font-weight: 500;
     line-height: 1.5;
 }
@@ -50,29 +65,47 @@ html{
     padding:40px 30px 0 30px;
     justify-content: center;
     text-align:center;
+    margin-bottom:50px;
 }
 .skills h1{
-    padding:20px 30px;
+    padding:30px;
+    margin-bottom: 40px;
+    font-size: 3rem;
+    font-weight: 450;
 }
-
+.skills h2{
+    font-size: 2rem;
+    font-weight: 450;
+}
 .skills ul{
     list-style: none;
     padding-left:0;
-    font-size: 1.2rem;
     font-weight: 500;
+    line-height: 1.5;
+
 }
 
 .projects{
     text-align:center;
     padding:40px 30px 0 30px;
     justify-content: space-around;
-    font-weight: 400;
-    font-size: 1.2rem;
-}
-.carousel{
-    margin-bottom: 50px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom:50px;
 }
 .projects h1{
+    padding:30px;
+    margin-bottom: 40px;
+    font-size: 3rem;
+    font-weight: 450;
+}
+.projects h3{
+    padding:0px 40px 30px 40px;
+    margin:0;
+    font-size: 2rem;
+    font-weight: 450;
+}
+.projects .lastrow{
     margin:30px;
 }
 .projects a{
@@ -87,6 +120,9 @@ html{
     box-shadow: -2px 2px 5px 5px rgb(99, 96, 96);
     border-radius: 10px;
 }
+.projects #carouselExampleSlidesOnly{
+   margin:40px;
+}
 .projects img{
     border-radius: 10px;
 }
@@ -94,13 +130,17 @@ html{
         padding:40px 30px 0 30px;
         justify-content: center;
         text-align:center;
+        margin-bottom:50px;
 }
 .shows h1{
-    padding:20px 30px;
+    padding:30px;
+    margin-bottom: 40px;
+    font-size: 3rem;
+    font-weight: 450;
 }
 .shows img{
     border-radius: 5px;
-    margin:15px;
+    margin:30px;
     cursor: pointer;
 }
 .shows img:hover{
@@ -113,13 +153,18 @@ background-color: rgb(66, 58, 58);
     padding:40px 30px 0 30px;
     justify-content: center;
     text-align:center;
+    margin-bottom:50px;
+    font-size: 1.35rem;
+    font-weight: 450;
 }
 .por h1{
-    padding:20px 30px;
+    padding:30px;
+    margin-bottom: 40px;
+    font-size: 3rem;
+    font-weight: 450;
 }
 .por-name{
     text-align: left;
-    font-size: 1rem;
     padding-top:5%;
 }
 .por-box{
@@ -132,7 +177,7 @@ footer{
 .foot{
     margin-bottom: 5%;
 }
-footer a{
+.foot a{
     margin:1%;
     margin-top: 5%;
 }
@@ -142,9 +187,29 @@ footer a{
 .disappear{
     opacity:0;
     transform: translateY(20px);
-    transition: 0.75s all ease-in-out;
+    transition: 0.5s all ease-in-out;
 }
 .appear{
     opacity: 1;
     transform: translateY(0);
+}
+
+.fadeOut{
+    opacity:0;
+    pointer-events: none;
+}
+.fadeIn{
+    opacity:1;
+    pointer-events:all;
+}
+@keyframes blink{
+    0%{
+        opacity:1;
+    }
+    50%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
 }

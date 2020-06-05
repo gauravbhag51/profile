@@ -1,3 +1,49 @@
+
+body{
+    font-family: 'Crimson Pro',serif;
+}
+.loader{
+    position:fixed;
+    width:100%;
+    height: 100vh;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(94, 94, 250);
+    transition: all 0.5s ease;
+}
+.box{
+    width:25px;
+    height: 25px;
+    margin:10px;
+    border-radius: 5px;
+    background:linear-gradient(rgb(252, 44, 44),rgb(245, 175, 46));
+}
+.load-header{
+    text-align: center;
+    width:100%;
+    margin:50px;
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+.load-header::after{
+    display: inline-block;
+    vertical-align: bottom;
+    content:"\2026";
+    overflow:hidden;
+    width:0px;
+    animation: dots steps(4,end) 2s infinite;
+
+}
+.load-box{
+    display: flex;
+    text-align: center;
+    justify-content:center;
+}
 .home-body{
     background-color:#f0f1f3;
     width: 100%;
@@ -6,7 +52,6 @@
     box-sizing: border-box;
     overflow: hidden;
     font-size: 1.25rem;
-    font-family: 'Crimson Pro',serif;
 }
 html{
     scroll-behavior: smooth;
@@ -211,5 +256,55 @@ footer{
     }
     100%{
         opacity:1;
+    }
+}
+@keyframes move1{
+    0%{
+       transform: translate(0px,0px); 
+    }
+    33.33%{
+        transform: translate(0px,35px); 
+    }
+     66.66%{
+        transform: translate(45px,35px);
+     }
+     100%{
+         transform: translate(45px,0px); 
+     }
+}
+@keyframes move2{
+    0%{
+       transform: translate(0px,0px); 
+    }
+     100%{
+         transform: translate(-45px,0px); 
+     }
+}
+@keyframes move3{
+    0%{
+       transform: translate(0px,0px); 
+    }
+    33.33%{
+        transform: translate(0px,-35px); 
+    }
+     66.66%{
+        transform: translate(-45px,-35px);
+     }
+     100%{
+         transform: translate(-45px,0px); 
+     }
+}
+@keyframes move4{
+    0%{
+       transform: translate(0px,0px); 
+    }
+     100%{
+         transform: translate(45px,0px); 
+     }
+}
+
+@keyframes dots{
+    to{
+       width:0.8em;
     }
 }

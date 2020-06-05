@@ -50,13 +50,20 @@ loadingfunction();
 setInterval(loadingfunction,2050);
 
 
-
+let count=0;
+let index=0;
+let letter="";
+let reverse=0;
 window.addEventListener("load",()=>
 {
     let preload=document.querySelector(".loader");
     preload.classList.add("fadeOut");
     let body=document.querySelector(".home_body");
     body.classList.remove("fadeOut");
+    let count=0;
+    index=0;
+    letter="";
+    reverse=0;
 })
 
 
@@ -135,10 +142,6 @@ function playaudio(){
 // TYPING EFFECT
 let intros=["Welcome, dear reader...   ","","I am Gaurav Bhagchandani.   ","I gaze at the aura of stars and contemplate upon our existence.   "];
 let introline=document.querySelector(".typing");
-let count=0;
-let index=0;
-let letter="";
-let reverse=0;
 (function typing(){
     if(reverse==0)
     {

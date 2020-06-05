@@ -1,3 +1,65 @@
+
+
+function loadingfunction(){
+    let boxnum=Math.floor(Math.random()*5);
+    let animation=Math.floor(Math.random()*2)*-1;
+    while(boxnum==0||animation==0)
+    {
+        boxnum=Math.floor(Math.random()*5);
+        animation=Math.floor(Math.random()*2)*-1;
+    }
+    boxmove=document.querySelector(`.box${boxnum}`);
+    let boxreplace;
+    
+    if(boxnum==1)
+    {
+        animation=1;
+        boxreplace=document.querySelector(`.box${boxnum+1}`);
+    }
+    else if(boxnum==4){
+        animation=-1;
+        boxreplace=document.querySelector(`.box${boxnum-1}`);
+    }
+    else{
+        if(animation==1)
+        {
+            boxreplace=document.querySelector(`.box${boxnum+1}`);
+        }
+        else
+        {
+            boxreplace=document.querySelector(`.box${boxnum-1}`);
+        }
+    }
+    if(animation==1)
+    {
+        boxmove.style.animation="move1 2s 1";
+        boxreplace.style.animation="move2 0.67s 1 1.33s";
+    }
+    else{
+        boxmove.style.animation="move3 2s 1";
+        boxreplace.style.animation="move4 0.67s 1 1.33s";
+    }
+}
+boxes=document.querySelectorAll(".box");
+boxes.forEach(box=>{
+    box.addEventListener("animationend",()=>{box.style.animation="";})
+})
+
+loadingfunction();
+
+setInterval(loadingfunction,2050);
+
+
+
+window.addEventListener("load",()=>
+{
+    let preload=document.querySelector(".loader");
+    preload.classList.add("fadeOut");
+    let body=document.querySelector(".home_body");
+    body.classList.remove("fadeOut");
+})
+
+
 let playingmusic={0:""};
 function scroll_events(){
     var headings=document.querySelectorAll(".disappear");

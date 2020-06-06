@@ -42,5 +42,5 @@
 - Making the website load faster will be something I will be looking forward to learn.
 ### Skills Learned:
 - This project taught me tons of things.
-- I did not JavaScript at all before this project, which I am proud to say, I have used very well in this page.
+- I did not know JavaScript at all before this project, which I am proud to say, I have used very well in this page.
 - I only had a little idea about CSS, but after this project I am more confident towards using it.

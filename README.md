@@ -3,7 +3,8 @@
 ### Gaurav Bhagchandani
 ### Group: 7
 
-
+### Link to the webpage:
+[View Portfolio](https://gauravbhag51.github.io/profile/)
 ### Milestones Achieved:
  - About Page
 - Skills Page

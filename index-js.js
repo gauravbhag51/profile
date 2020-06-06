@@ -60,7 +60,7 @@ window.addEventListener("load",()=>
     preload.classList.add("fadeOut");
     let body=document.querySelector(".home_body");
     body.classList.remove("fadeOut");
-    let count=0;
+    count=0;
     index=0;
     letter="";
     reverse=0;

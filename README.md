@@ -13,7 +13,7 @@
     - Codeforces Detail (Link to StopStalk Account)
     - Preloader
     - Favourite Shows
-    -Position Of Responsibily
+    - Position Of Responsibily
     - Typewriter Effect in Intro Section
     - Famous Diaoluges of Show played when clicked on it's Picture
     - Animation to every Section that makes it disappear as it is about to leave the viewport

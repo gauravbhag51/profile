@@ -35,7 +35,7 @@
 - The main problem faced by me was the transition effects and animations provided using JavaScript.
 - The Sound effect should stop if the pic goes outside the viewport, adding this functionality took some time.
 - The reappearing of the sections once disappeared and vice-versa gave many issues, but were solved at the end.
-- The Preloader effect was a rwal challenge, took me a lot effort to get that right.
+- The Preloader effect was a real challenge, took me a lot effort to get that right.
 ### Scope Of Improvement:
 - As I am just a beginner, there remain many improvements that were possible but were out of my scope of knowledge.
 - Adding some new animations and more projects to the portfolio will always be a dream.
